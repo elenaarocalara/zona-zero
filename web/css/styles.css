@@ -1,0 +1,1019 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+header {
+   height: 88px;
+
+   position: absolute;
+   top: 0;
+}
+
+#main-index {
+   background-color: #000000;
+   height: 100vh;
+   position: relative;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+}
+
+#main-products,
+#main-about,
+#main-profile {
+   background-color: #000000;
+   min-height: 100vh;
+   position: relative;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+}
+
+#main-editor {
+   background-color: #000000;
+   height: 100vh;
+   position: relative;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+}
+
+/* --------------------- Menú---------------------- */
+
+.circle {
+   display: block;
+   position: fixed;
+   top: 50px;
+   left: 60px;
+   z-index: 5;
+   height: 35px;
+}
+
+.circle>img {
+   height: 100%;
+}
+
+#icono {
+   display: block;
+   position: fixed;
+   top: 50px;
+   left: 80px;
+   z-index: 5;
+   height: auto;
+   transition: 0.35s ease-in-out;
+   cursor: pointer;
+}
+
+#icono>.burger {
+   height: 3px;
+   background-color: white;
+   margin: 7px 0;
+   transition: 0.4s;
+   border-radius: 2px;
+}
+
+.line-one {
+   width: 40px;
+}
+
+.line-two {
+   width: 35px;
+}
+
+.line-three {
+   width: 30px;
+}
+
+#icono.cambiar>div:nth-child(1) {
+   transform: rotate(-45deg) translate(-7px, 7px);
+   width: 35px;
+}
+
+#icono.cambiar>div:nth-child(2) {
+   opacity: 0;
+}
+
+#icono.cambiar>div:nth-child(3) {
+   transform: rotate(45deg) translate(-7px, -7px);
+   width: 35px;
+}
+
+
+#menu {
+   position: fixed;
+   top: 0px;
+   left: -100%;
+   width: 270px;
+   height: 100vh;
+
+   background-color: rgba(0, 0, 0, 0.8);
+
+   z-index: 4;
+   transition: 0.35s ease-in-out;
+
+   font-family: 'Montserrat', sans-serif;
+   
+}
+
+#menu>ul {
+   padding: 120px 0 10px 60px;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+
+   list-style: none;
+}
+
+#menu>ul>li {
+   padding: 15px 0;
+}
+
+#menu>ul>.category>a {
+   color: white;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 600;
+}
+
+#menu>ul>.language>a {
+   color: white;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 300;
+}
+
+.subcategory>a {
+   color: white;
+   text-decoration: none;
+   font-size: 14px;
+   padding-left: 30px;
+   font-weight:500;
+}
+
+#menu>ul>li>a:hover {
+   opacity: 0.7;
+}
+
+/* --------------------- Menú---------------------- */
+
+.logo {
+   height: 55px;
+   position: fixed;
+   top: 40px;
+   right: 50%;
+
+   z-index: 3;
+}
+
+.logo>a>img {
+   height: 100%;
+}
+
+.botones-derecha {
+   position: fixed;
+   z-index: 3;
+   top: 50px;
+   right: 80px;
+
+   display: flex;
+   justify-content: right;
+}
+
+.profile-cart {
+   width: 30px;
+   display: none;
+}
+
+.profile-cart>a {
+   width: 30px;
+}
+
+.profile-cart>a>img {
+   width: 100%;
+}
+
+.botones-derecha>a {
+   height: 30px;
+   padding: 0 10px;
+}
+
+.botones-derecha>a>svg {
+   height: 100%;
+}
+
+.botones-derecha>a:hover {
+   cursor: pointer;
+   opacity: 50%;
+}
+
+/* REDES */
+.redes {
+   position: fixed;
+   width: 25px;
+   bottom: 30px;
+   right: 30px;
+   z-index: 3;
+}
+.redes>div {
+   padding: 10px 0;
+}
+
+.redes>div:hover {
+   opacity: 0.7;
+   cursor: pointer;
+}
+
+/* --------------------- Carrusel---------------------- */
+
+
+.carrussel {
+   display: block;
+   overflow: hidden;
+}
+
+
+.slides {
+   height: 100vh;
+   width: 400%;
+   top: 0;
+
+   left: 0;
+   position: relative;
+
+
+   animation: 20s slider infinite;
+
+}
+
+.slides>div {
+
+   width: 25%;
+   float: left;
+   position: relative;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100%;
+}
+
+/* --------- */
+.slides img {
+   height: 200px;
+}
+
+/* --------- */
+
+@keyframes slider {
+   0% {
+      transform: translateX(0);
+   }
+
+   10% {
+      transform: translateX(0);
+   }
+
+   33% {
+      transform: translateX(-25%);
+   }
+
+
+   66% {
+      transform: translateX(-50%);
+   }
+
+
+   99% {
+      transform: translateX(-75%);
+   }
+
+
+   100% {
+      transform: translateX(-75%);
+   }
+}
+
+.text {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 400px;
+
+}
+
+.text>h3,
+.text>h1,
+.text>p {
+   color: #FFFFFF;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   padding: 5px 0;
+}
+
+.text>h3 {
+   font-size: 28px;
+}
+
+.text>h1 {
+   font-size: 38px;
+}
+
+.text>p {
+   font-size: 20px;
+   font-weight: lighter;
+}
+
+.text>a {
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+   color: #FFFFFF;
+   border: solid 2px #FFFFFF;
+   border-radius: 50px;
+   padding: 15px 35px;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.text>a:hover {
+   background-color: rgba(198, 65, 145, 0.75);
+}
+
+.videomovil {
+   display: none;
+}
+
+#background-video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
+
+.slide2 {
+   background-image: url(https://lna14012000.eu.pythonanywhere.com/img/fotoscandela.png);
+   background-position: bottom;
+   background-size: cover;
+}
+
+.slide3 {
+   background-image: url(https://lna14012000.eu.pythonanywhere.com/img/pellets.png);
+   background-position: bottom;
+   background-size: cover;
+}
+
+/* --------------------- Carrusel---------------------- */
+
+/* -------------- Galeria Productos + Filtro ---------------*/
+#gallery {
+   margin-top: 130px;
+   /* position: relative;
+   top: 130px; */
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+   padding: 50px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+   float: left;
+   width: 25%;
+   display: none;
+   /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* Content */
+
+/* -------------------------- */
+.content>figure>a>img {
+   width: 100%;
+}
+
+.content>figure>a {
+   transition: filter .2s;
+   width: auto;
+   height: auto;
+}
+
+.content>figure>a:hover {
+   filter: brightness(1.3);
+}
+
+.content>figure>figcaption {
+   display: flex;
+   justify-content: space-between;
+}
+
+.content>figure>figcaption>div {
+   height: 30px;
+}
+
+.content>figure>figcaption>div>img {
+   height: 100%;
+}
+
+.content>figure>figcaption>div>img:hover {
+   cursor: pointer;
+   opacity: 0.7;
+}
+
+.content>figure>figcaption>div>h4 {
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+   padding: 5px 0;
+}
+
+.content>figure>figcaption>div>p {
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+}
+
+/* --------------------------- */
+
+/* The "show" class is added to the filtered elements */
+.show {
+   display: block;
+}
+
+/* Style the buttons */
+#myBtnContainer {
+   margin-left: 50px;
+   position: fixed;
+   z-index: 3;
+}
+
+.btn {
+   border: solid 2px #FFFFFF;
+   border-radius: 50px;
+   /* outline: none; */
+   padding: 8px 15px;
+   margin: 0 5px;
+   color: #FFFFFF;
+   background-color: #000000;
+   cursor: pointer;
+}
+
+.btn:hover {
+   background-color: rgba(198, 65, 145, 0.75);
+}
+
+.btn.active {
+   background-color: #FFFFFF;
+   color: #000000;
+   font-weight: 600;
+}
+
+/* -------------- Galeria Productos + Filtro ---------------*/
+
+/* --------------Editor---------------*/
+/* -----------------------------------*/
+.visor {
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   flex-direction: row;
+   margin: 0;
+   padding-top: 200px;
+}
+
+.visor>div {
+   display: flex;
+   height: 100%;
+   flex: 50%;
+}
+
+.aSide {
+   height: 100%;
+   /* width: 400px; */
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-left: 200px;
+}
+
+/* 3D object dentro del viewer */
+.viewer model-viewer {
+   height: 600px;
+   width: 500px;
+   position: absolute;
+}
+
+.product-info>h1 {
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 50px;
+   padding-bottom: 50px;
+}
+
+.product-info>p {
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.preferences>div {
+   padding: 10px 0;
+}
+
+.colorPicker>h2,
+.size>h2,
+.quantity>h2 {
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+   padding: 10px 0;
+}
+
+.editor-right {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+   padding-bottom: 100px;
+}
+
+.editor-right>div {
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
+
+/* ColorPick Library */
+.picker {
+   border-radius: 18px;
+   width: 36px;
+   height: 36px;
+   cursor: pointer;
+   -webkit-transition: all linear .2s;
+   -moz-transition: all linear .2s;
+   -ms-transition: all linear .2s;
+   -o-transition: all linear .2s;
+   transition: all linear .2s;
+   border: thin solid #eee;
+}
+
+.picker:hover {
+   transform: scale(1.1);
+}
+
+.colorPicker {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding-top: 0;
+}
+
+.size>select {
+   appearance: none;
+   -moz-appearance: none;
+   -webkit-appearance: none;
+
+   width: 60px;
+   height: 60px;
+
+   border-radius: 5px;
+   border: solid 1px #ffffff;
+   padding: 10px;
+
+   text-align: center;
+   color: #ffffff;
+   font-size: 20px;
+
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.size>select>option {
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+
+   background-color: #000000;
+   border: solid 1px #ffffff;
+}
+
+.size select:hover {
+   opacity: 0.7;
+   cursor: pointer;
+}
+
+/*------- How many quantity ----*/
+.quantity {
+   overflow: hidden;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+input[type=number] {
+   -moz-appearance: textfield;
+}
+
+.quantity input {
+   width: 80px;
+   height: 50px;
+   line-height: 1.65;
+   
+   float: left;
+   display: block;
+   padding: 0;
+   margin: 0;
+   padding-left: 20px;
+
+   font-family: 'Montserrat', sans-serif;
+   color: #FFFFFF;
+   font-size: 18px;
+   font-weight: 600;
+
+   border-radius: 5px;
+   border: solid 1px #ffffff;
+   background-color: #000000;
+}
+
+.quantity input:focus {
+   outline: 0;
+}
+
+.quantity-nav {
+   float: left;
+   position: relative;
+   height: 49px;
+}
+
+.quantity-button {
+   position: relative;
+   cursor: pointer;
+   border-left: 1px solid #FFFFFF;
+   width: 30px;
+   text-align: center;
+   color: #FFFFFF;
+   font-size: 20px;
+   font-family: 'Montserrat', sans-serif !important;
+   font-weight: 700;
+   -webkit-transform: translateX(-100%);
+   transform: translateX(-100%);
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -o-user-select: none;
+   user-select: none;
+}
+
+.quantity-button.quantity-up {
+   position: absolute;
+   height: 50%;
+   top: 0;
+   border-bottom: 1px solid #FFFFFF;
+}
+
+.quantity-button.quantity-down {
+   position: absolute;
+   bottom: 0px;
+   height: 50%;
+}
+
+.quantity-button.quantity-up:hover,
+.quantity-button.quantity-down:hover {
+   opacity: 0.7;
+}
+
+input[type=submit] {
+   margin-top: 40px;
+   height: 50px;
+   padding: 0 20px;
+
+
+   background: none;
+   color: #FFFFFF;
+   border: solid 2px #FFFFFF;
+   border-radius: 30px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 12pt;
+   font-weight: 600;
+}
+
+input[type=submit]:hover {
+   opacity: 0.7;
+   cursor: pointer;
+}
+
+/* --------------Editor---------------*/
+/* -----------------------------------*/
+
+
+/* --------------ABOUT---------------*/
+/* -----------------------------------*/
+
+.about {
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+   height: 100vh;
+}
+
+.right {
+   padding: 150px;
+   flex-direction: column;
+   
+}
+
+.right>h1 {
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 80px;
+   width: 100%;
+}
+
+.right>p {
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+}
+
+
+.about>div {
+   height: 100%;
+   display: flex;
+
+   align-items: center;
+}
+
+.about>div>div {
+   flex: 50%;
+   height: 100%;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+}
+
+.left {
+   padding: 100px;
+}
+
+.left>img {
+   width: 100%;
+}
+
+/* -----------------------------------*/
+/* --------------ABOUT---------------*/
+
+/* --------------PROFILE--------------*/
+/* -----------------------------------*/
+#main-profile {
+   background-image:url(https://lna14012000.eu.pythonanywhere.com/img/gradientbackground.png);
+   background-position:center;
+   background-size: cover;
+}
+
+.log-in {
+   height: 100vh;
+   /* width: 500px; */
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.log-in>h2 {
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+   padding-bottom: 50px;
+   text-align: center;
+   font-size: 35px;
+}
+
+.log-in>form {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.log-in>form>label {
+   display: none;
+}
+
+.nombre-correo {
+   width: 400px;
+   height: 50px;
+   background-color: #00000000;
+   border: solid 2px #ffffff;
+   border-radius: 30px;
+   padding: 15px 15px 15px 25px;
+   margin: 15px 0;
+}
+
+::placeholder {
+   
+   color: #FFFFFF;
+}
+
+.log-in>form>input[type=submit] {
+   margin-top: 40px;
+   height: 50px;
+   padding: 0 30px;
+
+
+   background-color: #00000000;
+   color: #FFFFFF;
+   border: solid 3px #FFFFFF;
+   border-radius: 30px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 12pt;
+   font-weight: 700;
+}
+
+.log-in>form>input[type=submit]:hover {
+   background-color: #00000070;
+}
+
+
+/* -----------------------------------*/
+/* --------------PROFILE--------------*/
+
+
+/* -----------------RESPONSIVE------------------*/
+/* -----------------RESPONSIVE------------------*/
+@media (max-width: 450px) { 
+
+   .circle {
+      top: 25px;
+      left: 30px;
+   }
+
+   #icono {
+      top: 25px;
+      left: 50px;
+   }
+
+   #menu>ul {
+      padding: 80px 0 10px 60px;
+   }
+
+   .logo {
+      height: 35px;
+      top: 25px;
+      right: 30px;
+   }
+
+   .botones-derecha {
+      display: none;
+   }
+
+   .profile-cart {
+      display: block;
+   }
+
+   .videodesktop {
+      display: none;
+   }
+
+   .videomovil {
+      display: block;
+   }
+
+   .redes {
+      display: none;
+   }
+
+   .row,
+   .row>.column {
+   padding: 20px 10px 10px 10px;
+   }
+
+   .column {
+      float: left;
+      width: 50%;
+   }
+
+   .content>figure>figcaption>div {
+      height: 50px;
+   }
+
+   .content>figure>figcaption>div>h4 {
+      font-size: 14px;
+      padding: 0;
+   }
+
+   .content>figure>figcaption>div>p {
+      font-size: 12px;
+   }
+
+   .content>figure>figcaption>div>img {
+      height: 20px;
+   }
+
+   .content>figure>figcaption {
+      padding: 5px 0;
+   }
+
+   #myBtnContainer {
+      margin-left: 10px;
+   }
+
+   #main-editor {
+      height: 100%;
+   }
+
+   .visor {
+   flex-direction: column;
+   padding-top: 70px;
+   flex-wrap:nowrap;
+   height: auto;
+   }
+
+   .visor>div {
+      display: flex;
+      height: auto;
+   }
+
+   .visor>.editor-left {
+      flex: 30%;
+   }
+
+   .aSide {
+      padding-left: 0;
+      height: 300px;
+   }
+
+   .viewer model-viewer {
+      height: 300px;
+      width: 300px;
+   }   
+
+   .product-info {
+      padding-left: 20px;
+   }
+
+   .product-info>h1 {
+      font-size: 30px;
+      padding-bottom: 20px;
+   }
+
+   .colorPicker>h2,
+   .size>h2,
+   .quantity>h2 {
+      font-size: 16px;
+   }
+
+   .preferences>div {
+      padding-left: 20px;
+   }
+
+   .about {
+      height: auto;
+   }
+
+   .about>div {
+      flex-direction: column;
+      flex: none;
+   }
+
+   .right {
+      padding: 20px 40px 70px 40px;
+   }
+
+   .right>h1 {
+      font-size: 40px;
+      padding-bottom: 20px;
+   }
+
+   .left {
+      padding: 100px 40px 20px 40px;
+   }
+
+   .nombre-correo {
+      width: 290px;
+   }
+
+}
+
+/* -----------------RESPONSIVE------------------*/
+/* -----------------RESPONSIVE------------------*/
+

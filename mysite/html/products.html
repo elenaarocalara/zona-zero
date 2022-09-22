@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <!-- <meta lang="es"> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>ZONA ZERO | Products</title>
+
+   <!-- HOJAS DE ESTILOS -->
+   <link href="https://lna14012000.eu.pythonanywhere.com/css/styles.css" rel="stylesheet" type="text/css">
+
+   <script src="https://lna14012000.eu.pythonanywhere.com/js/script.js"></script>
+
+   <!-- TIPOGRAFÍAS -->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+
+   <!-- FAVICON -->
+   <link href="https://lna14012000.eu.pythonanywhere.com/img/zblack.png" rel="icon" type="image/png">
+   <!-- ICONOS -->
+   <script src="https://kit.fontawesome.com/c3fd22b8e3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+   <header>
+      <div class="circle">
+         <img src="https://lna14012000.eu.pythonanywhere.com/img/circulo.png" alt="">
+      </div>
+
+      <div id="icono" onclick="menu()">
+         <div class="burger line-one"></div>
+         <div class="burger line-two"></div>
+         <div class="burger line-three"></div>
+      </div>
+
+      <nav id="menu">
+         <ul onclick="closeMenu()">
+            <li class="category"><a href="index.html" onclick="closeMenu()">HOME</a></li>
+            <li class="category"><a href="products.html" onclick="closeMenu()">PRODUCTS</a></li>
+            <li class="subcategory"><a href="products.html" onclick="closeMenu()">RINGS</a></li>
+            <li class="subcategory"><a href="products.html" onclick="closeMenu()">EARRINGS</a></li>
+            <li class="subcategory"><a href="products.html" onclick="closeMenu()">NECKLACES</a></li>
+            <li class="category"><a href="about.html" onclick="closeMenu()">ABOUT</a></li>
+            <li class="language">
+               <a href="#" >ENGLISH</a>
+            </li>
+            <li class="language">
+               <a href="#" >SPANISH</a>
+            </li>
+            <li class="profile-cart">
+               <a href="profile.html" onclick="closeMenu()">
+                  <img src="https://lna14012000.eu.pythonanywhere.com/img/perfil.png"> </a>
+            </li>
+            <li class="profile-cart">
+               <a href="profile.html" onclick="closeMenu()">
+                  <img src="https://lna14012000.eu.pythonanywhere.com/img/cesta.png"> </a>
+               </a>
+            </li>
+         </ul>
+      </nav>
+
+
+      <div class="logo">
+         <a href="index.html">
+            <img src="https://lna14012000.eu.pythonanywhere.com/img/zwhite.png">
+         </a>
+      </div>
+
+
+      <div class="botones-derecha">
+         <a href="profile.html" class="perfil">
+            <svg viewBox="0 0 324 378" xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M162 19.7999C125.387 19.7999 95.7062 49.2594 95.7062 85.5996C95.7062 121.94 125.387 151.399 162 151.399C198.613 151.399 228.293 121.94 228.293 85.5996C228.293 49.2594 198.613 19.7999 162 19.7999ZM76.7651 85.5996C76.7651 38.8765 114.926 1 162 1C209.073 1 247.234 38.8765 247.234 85.5996C247.234 132.323 209.073 170.199 162 170.199C114.926 170.199 76.7651 132.323 76.7651 85.5996ZM59.1528 280.533C35.422 310.914 22.8002 346.946 19.859 368.841C19.1678 373.987 14.4045 377.602 9.21994 376.916C4.03541 376.23 0.3929 371.502 1.08417 366.356C4.45665 341.251 18.3523 302.084 44.1838 269.014C70.1636 235.755 108.975 207.799 162 207.799C214.966 207.799 253.005 234.913 278.642 267.852C304.127 300.597 317.886 339.66 322.836 365.866C323.8 370.969 320.414 375.881 315.273 376.837C310.132 377.794 305.183 374.433 304.22 369.331C299.699 345.403 286.941 309.267 263.653 279.345C240.516 249.619 207.526 226.599 162 226.599C116.531 226.599 82.7353 250.343 59.1528 280.533Z"
+                  fill="white" stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg>
+
+         </a>
+
+         <a href="#" class="cesta">
+            <svg viewBox="0 0 375 339" xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M118.861 71.4837C121.429 65.5503 124.439 59.6887 127.932 54.1487C140.8 33.7382 159.506 18.6207 186.396 18.6207C213.416 18.6207 231.153 32.7784 243.463 52.4687C247.202 58.4498 250.395 64.8823 253.129 71.4837H118.861ZM94.1068 89.2514C91.6283 98.5846 90.0948 107.317 89.3323 114.622C88.8272 119.461 92.349 123.793 97.1985 124.297C102.048 124.802 106.389 121.287 106.894 116.447C107.697 108.75 109.477 99.2631 112.441 89.2514H259.39C262.306 99.0165 264.415 108.607 265.998 117.139C266.886 121.923 271.492 125.084 276.287 124.198C281.081 123.312 284.248 118.715 283.36 113.93C281.987 106.534 280.191 98.0997 277.756 89.2514H339.088L355.581 320.232H19.4189L35.9121 89.2514H94.1068ZM99.815 71.4837C103.255 62.4365 107.6 53.311 112.987 44.7651C127.892 21.1239 151.489 1 186.396 1C221.175 1 243.901 19.8811 258.443 43.1412C264.042 52.0972 268.501 61.7936 272.078 71.4837H347.357C352.016 71.4837 355.884 75.0856 356.216 79.7346L373.977 328.483C374.153 330.943 373.299 333.365 371.619 335.17C369.939 336.975 367.584 338 365.119 338H9.88097C7.41568 338 5.06131 336.975 3.38133 335.17C1.70135 333.365 0.846946 330.943 1.02259 328.483L18.7845 79.7346C19.1165 75.0856 22.9836 71.4837 27.6429 71.4837H99.815Z"
+                  fill="white" stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg>
+
+         </a>
+      </div>
+   </header>
+
+   <main id="main-products">
+      <section id="gallery">
+
+         <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> All</button>
+            <button class="btn" onclick="filterSelection('anillos')"> Rings</button>
+            <button class="btn" onclick="filterSelection('pendientes')"> Earrings</button>
+            <button class="btn" onclick="filterSelection('collares')"> Necklaces</button>
+         </div>
+
+         <!-- Portfolio Gallery Grid -->
+         <div class="row">
+            <div class="column anillos">
+               <div class="content">
+
+                  <figure>
+                     <a href="ring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/anillo1.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>BUBBLEGUM RING </h4>
+                           <p>25€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+
+            <div class="column pendientes">
+               <div class="content">
+                  <figure>
+                     <a href="earring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/pendientes1.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>MELTING EARRINGS </h4>
+                           <p>23€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+
+            <div class="column collares">
+               <div class="content">
+
+                  <figure>
+                     <a href="necklace.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/collar1.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>MELTING NECKLACE </h4>
+                           <p>26€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+
+            <div class="column anillos">
+               <div class="content">
+
+                  <figure>
+                     <a href="ring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/anillo3.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>SQUARE RING </h4>
+                           <p>22€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+
+            <div class="column anillos">
+               <div class="content">
+
+                  <figure>
+                     <a href="ring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/anillo2.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>MELTING RING </h4>
+                           <p>27€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+
+
+
+            <div class="column anillos">
+               <div class="content">
+
+                  <figure>
+                     <a href="ring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/anillo5.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>BUBBLEGUM RING </h4>
+                           <p>25€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+            <div class="column anillos">
+               <div class="content">
+
+                  <figure>
+                     <a href="ring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/anillo4.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>LOOPY RING </h4>
+                           <p>26€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+
+
+            <div class="column pendientes">
+               <div class="content">
+                  <figure>
+                     <a href="earring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/pendientes2.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>MELTING EARRINGS </h4>
+                           <p>23€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+            <div class="column anillos">
+               <div class="content">
+
+                  <figure>
+                     <a href="ring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/anillo8.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>LOOPY RING </h4>
+                           <p>26€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+            <div class="column collares">
+               <div class="content">
+
+                  <figure>
+                     <a href="necklace.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/collar2.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>MELTING NECKLACE </h4>
+                           <p>26€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+
+            <div class="column anillos">
+               <div class="content">
+
+                  <figure>
+                     <a href="ring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/anillo7.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>MELTING RING </h4>
+                           <p>27€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+
+            <div class="column anillos">
+               <div class="content">
+
+                  <figure>
+                     <a href="ring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/anillo6.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>SQUARE RING </h4>
+                           <p>22€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+
+            <div class="column anillos">
+               <div class="content">
+
+                  <figure>
+                     <a href="ring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/anillo3.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>SQUARE RING </h4>
+                           <p>22€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+
+            <div class="column anillos">
+               <div class="content">
+
+                  <figure>
+                     <a href="ring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/anillo2.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>MELTING RING </h4>
+                           <p>27€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+
+            <div class="column anillos">
+               <div class="content">
+
+                  <figure>
+                     <a href="ring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/anillo4.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>LOOPY RING </h4>
+                           <p>26€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+
+            <div class="column anillos">
+               <div class="content">
+
+                  <figure>
+                     <a href="ring.html">
+                        <img src="https://lna14012000.eu.pythonanywhere.com/img/piezas/anillo5.png" alt="">
+                     </a>
+                     <figcaption>
+                        <div>
+                           <h4>BUBBLEGUM RING </h4>
+                           <p>25€</p>
+                        </div>
+                        <div>
+                           <img src="https://lna14012000.eu.pythonanywhere.com/img/heart.png">
+                        </div>
+                     </figcaption>
+                  </figure>
+
+               </div>
+            </div>
+
+
+
+
+
+
+            <!-- END GRID -->
+         </div>
+      </section>
+
+
+      <!-- REDES -->
+      <div class="redes">
+         <div>
+            <img src="https://lna14012000.eu.pythonanywhere.com/img/facebook.svg">
+         </div>
+
+         <div>
+            <img src="https://lna14012000.eu.pythonanywhere.com/img/instagram.svg">
+         </div>
+
+         <div>
+            <img src="https://lna14012000.eu.pythonanywhere.com/img/twitter.svg">
+         </div>
+
+         <div>
+            <img src="https://lna14012000.eu.pythonanywhere.com/img/tiktok.svg">
+         </div>
+
+         <div>
+            <img src="https://lna14012000.eu.pythonanywhere.com/img/youtube.svg">
+         </div>
+      </div>
+
+   </main>
+   <script>
+      filterSelection("all") // Execute the function and show all columns
+      function filterSelection(c) {
+         var x, i;
+         x = document.getElementsByClassName("column");
+         if (c == "all") c = "";
+         // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+         for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+         }
+      }
+
+      // Show filtered elements
+      function w3AddClass(element, name) {
+         var i, arr1, arr2;
+         arr1 = element.className.split(" ");
+         arr2 = name.split(" ");
+         for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+               element.className += " " + arr2[i];
+            }
+         }
+      }
+
+      // Hide elements that are not selected
+      function w3RemoveClass(element, name) {
+         var i, arr1, arr2;
+         arr1 = element.className.split(" ");
+         arr2 = name.split(" ");
+         for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+               arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+         }
+         element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      console.log(btns.length);
+      for (var i = 0; i < btns.length; i++) {
+         btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+         });
+      }
+   </script>
+</body>
+
+</html>
